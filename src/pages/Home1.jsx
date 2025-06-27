@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <main className={s.main__top}>
                 <div className={s.main__top_title}>
-                    <p className={s.main__top_title}>{t('aboutMe')}</p>
+                    <p className={s.main__top_title}>{t('aboutMe1')}</p>
                 </div>
                 <div className={s.container}>
                     <div className={s.main__top_box}>
@@ -19,10 +19,10 @@ const Home = () => {
                             <img className={s.main__top_left_img} src={photo} />
                         </div>
                         <div className={s.main__top_right}>
-                            <h2 className={s.main__top_right_title}>{t('iAm')} {t('name')}</h2>
-                            <p className={s.main__top_right_text}>{t('frontEndDeveloper')}</p>
+                            <h2 className={s.main__top_right_title}>{t('iAm1')} {t('name1')}</h2>
+                            <p className={s.main__top_right_text}>{t('frontEndDeveloper1')}</p>
                             <p className={s.main__top_right_text}>
-                                {t('description')}
+                                {t('description1')}
                             </p>
                         </div>
                     </div>

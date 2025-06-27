@@ -10,18 +10,18 @@ const Home = () => {
         <>
             <main className={s.main__top}>
                 <div className={s.main__top_title}>
-                    <p className={s.main__top_title}>{t('aboutMeU1')}</p>
+                    <p className={s.main__top_title}>{t('aboutMeU3')}</p>
                 </div>
                 <div className={s.container}>
                     <div className={s.main__top_box}>
                         <div className={s.main__top_left}>
-                            <img className={s.main__top_left_img} src={photo} alt={t('altPhotoU1')} />
+                            <img className={s.main__top_left_img} src={photo} alt={t('altPhotoU3')} />
                         </div>
                         <div className={s.main__top_right}>
-                            <h2 className={s.main__top_right_title}>{t('iAmU1')} {t('nameU1')}</h2>
-                            <p className={s.main__top_right_text}>{t('frontEndDeveloperU1')}</p>
+                            <h2 className={s.main__top_right_title}>{t('iAmU3')} {t('nameU3')}</h2>
+                            <p className={s.main__top_right_text}>{t('frontEndDeveloperU3')}</p>
                             <p className={s.main__top_right_text}>
-                                {t('descriptionU1')}
+                                {t('descriptionU3')}
                             </p>
                         </div>
                     </div>

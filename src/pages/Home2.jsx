@@ -19,10 +19,10 @@ const Home = () => {
                             <img className={s.main__top_left_img} src={photo} />
                         </div>
                         <div className={s.main__top_right}>
-                            <h2 className={s.main__top_right_title}>{t('iAm')} {t('name')}</h2>
-                            <p className={s.main__top_right_text}>{t('frontEndDeveloper')}</p>
+                            <h2 className={s.main__top_right_title}>{t('iAm2')} {t('name2')}</h2>
+                            <p className={s.main__top_right_text}>{t('frontEndDeveloper2')}</p>
                             <p className={s.main__top_right_text}>
-                                {t('description')}
+                                {t('description2')}
                             </p>
                         </div>
                     </div>

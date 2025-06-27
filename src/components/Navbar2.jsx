@@ -4,13 +4,13 @@ import background from '../assets/images/blobid1579928399432.jpg';
 
 import logoLnguage from '../assets/images/computer-icons-language-icon-png-favpng-NQSGiSmKDpKJpGXw1p4tMdi6Z.jpg';
 import { useTranslation } from "react-i18next";
-import Home from "../pages/Home";
-import Products from "../pages/Products";
-import Users from "../pages/Users";
+import Home from "../pages/Home2";
+import Products from "../pages/Products2";
+import Users from "../pages/Users2";
 import { Route, Routes} from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-const Navbar = () => {
+const Navbar2 = () => {
   const { t, i18n } = useTranslation();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
 
@@ -113,5 +113,5 @@ const Navbar = () => {
 };
 
 
-export default Navbar;
+export default Navbar2;
 

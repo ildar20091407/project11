@@ -1,0 +1,157 @@
+// Variables
+$color-primary: #bb1d25ab;
+$color-secondary: #7f8081;
+$color-white: #fff;
+$color-black: #000;
+$color-accent: #ffa600;
+$font-family: arial, sans-serif;
+$container-max-width: 1500px;
+$container-padding: 15px;
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// Универсальные классы
+.container {
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  color: $color-black;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+// Основной блок (main__top)
+.main__top {
+  background: $color-black;
+  padding: 20px 0;
+
+  // Контейнер содержимого (main__top-box)
+  .main__top-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+//  Стили для медиа-контента в main__top-box (изображения, видео)
+.main__top-left-img,
+.main__top-left {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+//  Правая часть (текстовый контент)
+.main__top-right {
+  padding: 20px;
+
+  // Заголовок (main__top-right-title)
+  .main__top-right-title {
+    font-size: 35px;
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+
+  // Текст (main__top-right-text)
+  .main__top-right-text {
+    font-size: 18px;
+    text-align: justify;
+    color: $color-white;
+    line-height: 1.5;
+  }
+
+  // Список ссылок (main__top-right-list)
+  .main__top-right-list {
+    display: flex;
+    flex-direction: column;
+
+    // Ссылка (main__top-right-link)
+    .main__top-right-link {
+      color: $color-white;
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 1.5;
+      display: block;
+
+      &:hover { // &: - ссылка на текущий селектор .main__top-right-link
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Заголовок страницы
+.main__top-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: $color-secondary;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+// Изображения элементов (main__item-img)
+.main__item-img {
+  width: 100%;
+  display: block;
+}
+
+// Элемент списка внизу (main__botom-item)
+.main__botom-item {
+  margin-bottom: 30px;
+}
+
+// Футер
+.footer {
+  padding: 20px;
+  background: $color-black;
+
+  // Заголовок футера (footer__title)
+  .footer__title {
+    font-size: 40px;
+    text-align: center;
+    color: $color-white;
+  }
+
+  // Текст футера (footer__text)
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: $color-white;
+  }
+}
+
+// Кнопка
+.btn {
+  background: $color-black;
+  color: $color-white;
+  border: 1px solid $color-white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {  // &: - ссылка на текущий селектор .btn
+    background-color: $color-secondary;
+  }
+}
+
+// Кнопка в футере (footer__top-btn)
+.footer__top-btn {
+  margin-top: -10px;
+  padding-right: 5px;
+}

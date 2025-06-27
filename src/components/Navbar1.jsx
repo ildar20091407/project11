@@ -4,13 +4,13 @@ import background from '../assets/images/blobid1579928399432.jpg';
 
 import logoLnguage from '../assets/images/computer-icons-language-icon-png-favpng-NQSGiSmKDpKJpGXw1p4tMdi6Z.jpg';
 import { useTranslation } from "react-i18next";
-import Home from "../pages/Home";
-import Products from "../pages/Products";
-import Users from "../pages/Users";
+import Home1 from "../pages/Home1";
+import Products1 from "../pages/Products1";
+import Users1 from "../pages/Users1";
 import { Route, Routes} from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-const Navbar = () => {
+const Navbar1 = () => {
   const { t, i18n } = useTranslation();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                            <div className="main__top-right">
                                <h2 className="nav__title">Здравствуйте! </h2>
                                <h2 className="nav__title">Я Лаишев Ильдар. </h2>
-                               <p className="nav__text">Web-development</p>
+                               <p className="nav__text">Системный Администратор</p>
 
                            </div>
 
@@ -102,9 +102,9 @@ const Navbar = () => {
                     unmountOnExit={true}
                 >
                     <Routes location={location}>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/products" element={<Products />} />
-                        <Route path="/users" element={<Users />} />
+                        <Route path="/" element={<Home1 />} />
+                        <Route path="/products" element={<Products1 />} />
+                        <Route path="/users" element={<Users1 />} />
                     </Routes>
                 </CSSTransition>
             </TransitionGroup>
@@ -113,5 +113,7 @@ const Navbar = () => {
 };
 
 
-export default Navbar;
+export default Navbar1;
+
+
 
