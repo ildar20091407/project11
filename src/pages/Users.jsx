@@ -21,7 +21,7 @@ const Home = () => {
                             <h2 className={s.main__top_right_title}>{t('iAmU1')} {t('nameU1')}</h2>
                             <p className={s.main__top_right_text}>{t('frontEndDeveloperU1')}</p>
                             <p className={s.main__top_right_text}>
-                                {t('descriptionU1')}
+                                {t('frontendTasks')}
                             </p>
                         </div>
                     </div>

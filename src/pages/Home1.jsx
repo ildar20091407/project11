@@ -20,7 +20,7 @@ const Home = () => {
                         </div>
                         <div className={s.main__top_right}>
                             <h2 className={s.main__top_right_title}>{t('iAm1')} {t('name1')}</h2>
-                            <p className={s.main__top_right_text}>{t('frontEndDeveloper1')}</p>
+                            <p className={s.main__top_right_text}></p>
                             <p className={s.main__top_right_text}>
                                 {t('description1')}
                             </p>

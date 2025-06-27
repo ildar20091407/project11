@@ -21,7 +21,7 @@
         "iAmU1": "I am",
         "nameU1": "Ildar Laishev",
         "frontEndDeveloperU1": "Front-end Developer",
-        "descriptionU1": "I create responsive websites using HTML and CSS, and I can add data from the server.",
+          "frontendTasks": "Frontend Development tasks involve: Converting designs into HTML, Styling with CSS, Adding interactivity with JavaScript, Optimizing performance, Ensuring responsiveness, Ensuring cross-browser compatibility, Using frameworks and libraries.",
         
         "jobTitle": "System Administrator",
         "jobDescription": "A specialist providing reliable and secure operation of the organization's IT infrastructure, including computer systems, servers, and networks. A key role in maintaining the uninterrupted operation of the business, protecting data, and optimizing IT resources.",

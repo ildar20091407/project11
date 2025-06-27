@@ -21,8 +21,7 @@
         "iAmU1": "I am",
         "name1U1": "Ildar Laishev",
         "frontEndDeveloperU1": "Front-end Developer",
-        "descriptionU1": "I create responsive websites using HTML and CSS, and I can add data from the server.",
-        
+          "frontendTasks": "Frontend rivojlantirish vazifalari: Dizaynlarni HTMLga aylantirish, CSS bilan uslublash, JavaScript bilan interaktivlik qo'shish, Ishlashni optimallashtirish, Moslashuvchanlikni ta'minlash, Brauzerlararo muvofiqlikni ta'minlash, Framework va kutubxonalardan foydalanish.",
         
         "jobTitle": "Tizim administrator",
         "jobDescription": "Tashkilotning IT infratuzilmasining ishonchli va xavfsiz ishlashini ta'minlovchi mutaxassis, jumladan, kompyuter tizimlari, serverlar va tarmoqlar. Biznesning uzluksiz ishlashini qo'llab-quvvatlash, ma'lumotlarni himoya qilish va IT resurslarini optimallashtirishda muhim rol o'ynaydi.",
