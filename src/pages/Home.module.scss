@@ -174,7 +174,7 @@ flex-direction: column;
 }
 
 @media (max-width:1200px) {
-    .main__botom{
+    .main__top_box{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -197,12 +197,12 @@ flex-direction: column;
         flex-direction: column;
         align-items: center;
     }
-    .nav__botom-box{
+    .nav__botom_box{
     position: absolute;
     max-width: 500px;
     width: 100%;
-    bottom: 50px;
-    left: 50px;
+    bottom: 5px;
+    left: 5px;
     
 }
     
