@@ -16,7 +16,7 @@ const navbars = [
 ];
 
 function App() {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [ setCurrentSlide] = useState(0);
     const sliderRef = useRef(null);
 
     const settings = {
@@ -31,22 +31,14 @@ function App() {
         }
     };
 
-    const handleNextNavbar = () => {
-        sliderRef.current.slickNext();
-    };
 
-    const handlePrevNavbar = () => {
-        sliderRef.current.slickPrev();
-    };
 
  
 
     return (
         <>
             <div className="navbar-container">
-                <button onClick={handlePrevNavbar}>&lt;</button>
-                <button onClick={handleNextNavbar}>&gt;</button>
-                <div>Slide: {currentSlide + 1} / {navbars.length}</div> {/* Slide Counter */}
+
                 <Slider ref={sliderRef} {...settings}>
                     {navbars.map((navbar, index) => (
                         <div key={index}>{navbar}</div>

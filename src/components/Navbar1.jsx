@@ -84,9 +84,9 @@ const Navbar1 = () => {
         <div className="nav__botom-box">
 
                            <div className="main__top-right">
-                               <h2 className="nav__title">Здравствуйте! </h2>
-                               <h2 className="nav__title">Я Лаишев Ильдар. </h2>
-                               <p className="nav__text">Системный Администратор</p>
+                                <h2 className="nav__title">{t('Hello!')}</h2>
+                                <h2 className="nav__title">{t('I am')} </h2>
+                                <p className="nav__text">{t('Web-development1')}</p>
 
                            </div>
 

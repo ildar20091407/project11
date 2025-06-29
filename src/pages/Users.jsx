@@ -6,6 +6,8 @@ import s from "./Users.module.scss";
 const Home = () => {
     const { t } = useTranslation();
 
+    console.log("Home component is rendering"); // Log when the component renders
+
     return (
         <>
             <main className={s.main__top}>
@@ -19,6 +21,7 @@ const Home = () => {
                         </div>
                         <div className={s.main__top_right}>
                             <h2 className={s.main__top_right_title}>{t('iAmU1')} {t('nameU1')}</h2>
+                <div className="">
                             <p className={s.main__top_right_text}>{t('frontEndDeveloperU1')}</p>
                             <p className={s.main__top_right_text}>
                                 {t('frontendTasks')}
@@ -26,10 +29,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </main>
         </>
     );
 };
 
 export default Home;
-

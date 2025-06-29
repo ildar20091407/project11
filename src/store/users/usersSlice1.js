@@ -1,5 +1,10 @@
 
 import img1 from '../../assets/images/2025-06-14_19-16-50.png'
+import img2 from '../../assets/images/2025-06-28_21-42-05.png'
+import img3 from '../../assets/images/2025-06-28_21-50-02.png'
+import img4 from '../../assets/images/2025-06-28_21-53-51.png'
+import img5 from '../../assets/images/2025-06-28_21-56-25.png'
+import img6 from '../../assets/images/2025-06-28_22-03-25.png'
 
 export const products =[
     {
@@ -19,100 +24,37 @@ export const products =[
     {
         id: 3,
         title: 'Air-pods',
-        img: img1,
-        link: '',
+        img: img2,
+        link: 'https://ildar20091407.github.io/Air-pods/',
         description: ''
     },
-    {
-        id: 4,
-        title: 'Java-1',
-        img: img1,
-        link: ' https://ildar20091407.github.io/Java-1/',
-        description: ''
-    },
+
     {
         id: 5,
         title: 'go-trip',
-        img: img1,
+        img: img3,
         link: 'https://ildar20091407.github.io/go-trip/',
         description: ''
     },
     {
         id: 6,
-        title: 'Java-2',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-2/',
+        title: 'Todolist',
+        img: img6,
+        link: 'https://todolist-seven-gold.vercel.app',
         description: ''
     },
     {
         id: 7,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-3/',
+        title: 'Cinema',
+        img: img4,
+        link: ' https://ildar20091407.github.io/Cinema/',
         description: ''
     },
     {
         id: 8,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-4/',
+        title: 'Burger',
+        img: img5,
+        link: ' https://ildar20091407.github.io/Burger/',
         description: ''
-    },
-    {
-        id: 9,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-5/',
-        description: ''
-    },
-    {
-        id: 10,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-6/',
-        description: ''
-    },
-    {
-        id: 11,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-7/',
-        description: ''
-    },
-    {
-        id: 12,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-8/',
-        description: ''
-    },
-    {
-        id: 13,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-9/',
-        description: ''
-    },
-    {
-        id: 14,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-10/',
-        description: ''
-    },
-    {
-        id: 15,
-        title: 'silver-home',
-        img: img1,
-        link: ' https://ildar20091407.github.io/Java-11/',
-        description: ''
-    },
-    {
-        id: 16,
-        title: 'silver-home',
-        img: img1,
-        link: 'https://ildar20091407.github.io/Java-12/',
-        description: ''
-    },
-
+    }
 ]

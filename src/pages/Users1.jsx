@@ -10,50 +10,52 @@ const Users = () => {
         <div>
             <main className={s.main__top}>
                 <div className={s.main__top_title}>
-                    <p className={s.main__top_title} >{t('aboutMe')}</p>
+                    <p className={s.main__top_title}>{t('aboutMe')}</p>
                 </div>
                 <div className="container">
                     <div className={s.main__top_box}>
                         <img className={s.main__top_left_img} src={photo} alt={t('altPhoto')} />
 
                         <div className={s.main__first_text}>
-
                             <h2 className={s.main__top_right_title}>{t('iAm')} {t('name')}</h2>
 
-
-                            <p className={s.main__top_right_text}>
-                                {t('jobTitle')}
-
-                                {t('jobDescription')}
-
-                                {t('keySkills')}:
-
+                            <div> {/* Wrap text and list in a div */}
+                                <p className={s.main__top_right_text}>
+                                    {t('jobTitle')}
+                                    {t('jobDescription')}
+                                    {t('keySkills')}:
+                                </p>
                                 <ul className={s.main__top_right_list}>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility1')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility2')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility3')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility4')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility5')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility6')}
-                                    </li>
-                                    <li className={s.main__top_right_link}>
-                                        {t('responsibility7')}
-                                    </li>
+                                    <div className="">
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility1')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility2')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility3')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility4')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility5')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility6')}
+                                        </li>
+                                        <li className={s.main__top_right_link}>
+                                            {t('responsibility7')}
+                                        </li>
+                                    </div>
                                 </ul>
-                            </p>
-                        <p className="main__top-right-text">
-                            {t('specializationsLabel')}:
+                            </div>
+
+                            <div> {/* Wrap text and list in a div */}
+                                <p className="main__top-right-text">
+                                    {t('specializationsLabel')}:
+                                </p>
                                 <ul className="main__top-right-list">
                                     <li className={s.main__top_right_link}>
                                         {t('specialization1')}
@@ -68,9 +70,9 @@ const Users = () => {
                                         {t('specialization4')}
                                     </li>
                                 </ul>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </main>
         </div>
@@ -78,6 +80,3 @@ const Users = () => {
 };
 
 export default Users;
-
-
-

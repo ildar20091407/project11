@@ -1,18 +1,20 @@
-    // Users.module.scss
-
-
-
-
-$color-primary: #bb1d25ab;
-$color-secondary: #7f8081;
-$color-white: #fff;
-$color-black: #000;
-$color-accent: #ffa600;
-$font-family: arial, sans-serif;
 $container-max-width: 1500px;
 $container-padding: 15px;
 
+:root {
 
+  --text-color: #fff; // Default text color
+  --accent-color: #ffa600; // Default accent color
+  --nav-bg-color: #000; // Default Nav background color
+
+}
+
+[data-theme="dark"] {
+  --text-color: #000; // Dark theme text
+  --accent-color: #ffc107; // Dark theme accent (slightly brighter)
+  --nav-bg-color: #fff; // Dark theme Nav background
+
+}
 a {
   text-decoration: none;
 }
@@ -27,7 +29,7 @@ ul {
   width: 100%;
   margin: 0 auto;
   padding: 0 $container-padding;
-  color: $color-black;
+  color: var( --nav-bg-color);
 }
 
 .box {
@@ -38,7 +40,7 @@ ul {
 
 // Основной блок (main__top)
 .main__top {
-  background: $color-black;
+  background: var( --nav-bg-color);
   padding: 20px 0;
 
   // Контейнер содержимого (main__top-box)
@@ -67,7 +69,7 @@ ul {
         // Заголовок (main__top-right-title)
         &_title {
             font-size: 35px;
-            color: $color-accent;
+            color: var( --accent-color);
             margin-bottom: 20px;
         }
         
@@ -75,7 +77,7 @@ ul {
         &_text {
             font-size: 18px;
             text-align: justify;
-            color: $color-white;
+            color: var(--text-color);
             line-height: 1.5;
             max-width: 300px;
             width: 100%;
@@ -88,7 +90,7 @@ ul {
             
             // Ссылка (main__top-right-link)
             &_right_link {
-                color: $color-white;
+                color: var(--text-color);
                 margin-top: 10px;
                 font-size: 18px;
                 line-height: 1.5;
@@ -105,7 +107,7 @@ ul {
     &_title {
         font-size: 40px;
         font-weight: bold;
-        color:$color-accent;
+        color:var( --accent-color);
         text-align: center;
         margin-bottom: 20px;
     }
@@ -125,13 +127,13 @@ ul {
     // Футер
     .footer {
         padding: 20px;
-        background: $color-black;
+        background: var( --nav-bg-color);
         
         // Заголовок футера (footer__title)
         .footer__title {
             font-size: 40px;
             text-align: center;
-            color: $color-white;
+            color: var(--text-color);
         }
         
         // Текст футера (footer__text)
@@ -139,23 +141,22 @@ ul {
             display: flex;
             justify-content: center;
             margin-top: 40px;
-            color: $color-accent;
+            color: var( --accent-color);
         }
     }
     
     // Кнопка
     .btn {
-        background: $color-black;
-        color: $color-white;
-        border: 1px solid $color-white;
+        background: var( --nav-bg-color);
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
         padding: 10px 20px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         
-        &:hover {  // &: - ссылка на текущий селектор .btn
-            background-color: $color-secondary;
+
   }
-}
+
 
 // Кнопка в футере (footer__top-btn)
 .footer__top_btn {
