@@ -2,14 +2,25 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import photo from '../assets/images/photo_2025-02-10_09-43-29.jpg';
 import s from "./Users.module.scss";
+import background from '../assets/images/blobid1579928399432.jpg';
 
 const Home = () => {
     const { t } = useTranslation();
 
-    console.log("Home component is rendering"); // Log when the component renders
+
 
     return (
         <>
+        <nav className="nav__bottom">
+            <img src={background} className="background" alt="" />
+              <div className="nav__botom-box">
+                <div className="main__top-right">
+                    <h2 className="nav__title">{t('Hello!')}</h2>
+                    <h2 className="nav__title">{t('I am')} </h2>
+                    <p className="nav__text">{t('Web-development')}</p>
+                </div>
+              </div>
+        </nav>
             <main className={s.main__top}>
                 <div className={s.main__top_title}>
                     <p className={s.main__top_title}>{t('aboutMeU1')}</p>

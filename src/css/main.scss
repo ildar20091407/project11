@@ -168,7 +168,7 @@ ul {
     max-width: 500px;
     width: 100%;
     bottom: 50px;
-    left: 50px;
+    left: 150px;
     
 }
 .nav__title{
@@ -238,7 +238,7 @@ ul {
     font-weight: 400;
     font-size: 35px;
     color:var(--text-color);
-    padding-top: 95px;
+
 }
 .main__top-title{
     display: flex;
@@ -396,11 +396,7 @@ justify-content: center;
     
     gap: 40px;
 }
-.main__botom-itemes-beer{
-    display: flex;
-    justify-content: center;
-    margin-right: 75px;
-}
+
 .nav__link:hover {
     border-color: #007BFF;
 }

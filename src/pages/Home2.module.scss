@@ -1,14 +1,20 @@
-// Variables
-$color-primary: #bb1d25ab;
-$color-secondary: #7f8081;
-$color-white: #fff;
-$color-black: #000;
-$color-accent: #ffa600;
-$font-family: arial, sans-serif;
 $container-max-width: 1500px;
 $container-padding: 15px;
 
+:root {
 
+  --text-color: #fff; // Default text color
+  --accent-color: #ffa600; // Default accent color
+  --nav-bg-color: #000; // Default Nav background color
+
+}
+
+[data-theme="dark"] {
+  --text-color: #000; // Dark theme text
+  --accent-color: #ffc107; // Dark theme accent (slightly brighter)
+  --nav-bg-color: #fff; // Dark theme Nav background
+
+}
 a {
   text-decoration: none;
 }
@@ -23,7 +29,7 @@ ul {
   width: 100%;
   margin: 0 auto;
   padding: 0 $container-padding;
-  color: $color-black;
+  color: var( --nav-bg-color);
 }
 
 .box {
@@ -34,129 +40,129 @@ ul {
 
 // Основной блок (main__top)
 .main__top {
-  background: $color-black;
+  background: var( --nav-bg-color);
   padding: 20px 0;
 
   // Контейнер содержимого (main__top-box)
-  .main__top-box {
+  &_box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     align-items: center;
   }
-}
-
-//  Стили для медиа-контента в main__top-box (изображения, видео)
-.main__top-left-img,
-.main__top-left {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-  margin: 0 auto;
-  display: block;
-}
-
-//  Правая часть (текстовый контент)
-.main__top-right {
-  padding: 20px;
-
-  // Заголовок (main__top-right-title)
-  .main__top-right-title {
-    font-size: 35px;
-    color: $color-white;
-    margin-bottom: 20px;
-  }
-
-  // Текст (main__top-right-text)
-  .main__top-right-text {
-    font-size: 18px;
-    text-align: justify;
-    color: $color-white;
-    line-height: 1.5;
-  }
-
-  // Список ссылок (main__top-right-list)
-  .main__top-right-list {
-    display: flex;
-    flex-direction: column;
-
-    // Ссылка (main__top-right-link)
-    .main__top-right-link {
-      color: $color-white;
-      margin-top: 10px;
-      font-size: 18px;
-      line-height: 1.5;
+  
+  //  Стили для медиа-контента в main__top-box (изображения, видео)
+  &_left_img,
+  &_left {
+      width: 100%;
+      max-height: 700px;
+      max-width: 500px;
+      height: 100%;
+      margin: 0 auto;
       display: block;
-
-      &:hover { // &: - ссылка на текущий селектор .main__top-right-link
-        text-decoration: underline;
-      }
     }
+    
+    //  Правая часть (текстовый контент)
+    &_right {
+        padding: 20px;
+        
+        // Заголовок (main__top-right-title)
+        &_title {
+            font-size: 35px;
+            color: var( --accent-color);
+            margin-bottom: 20px;
+        }
+        
+        // Текст (main__top-right-text)
+        &_text {
+            font-size: 18px;
+            text-align: justify;
+            color: var(--text-color);
+            line-height: 1.5;
+            max-width: 300px;
+            width: 100%;
+        }
+        
+        // Список ссылок (main__top-right-list)
+        &_list {
+            display: flex;
+            flex-direction: column;
+            
+            // Ссылка (main__top-right-link)
+            &_right_link {
+                color: var(--text-color);
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 1.5;
+                display: block;
+                
+                &:hover { // &: - ссылка на текущий селектор .main__top-right-link
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    // Заголовок страницы
+    &_title {
+        font-size: 40px;
+        font-weight: bold;
+        color:var( --accent-color);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+    
+    // Изображения элементов (main__item-img)
+    .main__item_img {
+        width: 100%;
+        display: block;
+    }
+    
+    // Элемент списка внизу (main__botom-item)
+    .main__botom_item {
+        margin-bottom: 30px;
+    }
+    
+    // Футер
+    .footer {
+        padding: 20px;
+        background: var( --nav-bg-color);
+        
+        // Заголовок футера (footer__title)
+        .footer__title {
+            font-size: 40px;
+            text-align: center;
+            color: var(--text-color);
+        }
+        
+        // Текст футера (footer__text)
+        .footer__text {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            color: var( --accent-color);
+        }
+    }
+    
+    // Кнопка
+    .btn {
+        background: var( --nav-bg-color);
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+
   }
-}
 
-// Заголовок страницы
-.main__top-title {
-    font-size: 40px;
-    font-weight: bold;
-    color: $color-secondary;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-// Изображения элементов (main__item-img)
-.main__item-img {
-  width: 100%;
-  display: block;
-}
-
-// Элемент списка внизу (main__botom-item)
-.main__botom-item {
-  margin-bottom: 30px;
-}
-
-// Футер
-.footer {
-  padding: 20px;
-  background: $color-black;
-
-  // Заголовок футера (footer__title)
-  .footer__title {
-    font-size: 40px;
-    text-align: center;
-    color: $color-white;
-  }
-
-  // Текст футера (footer__text)
-  .footer__text {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    color: $color-white;
-  }
-}
-
-// Кнопка
-.btn {
-  background: $color-black;
-  color: $color-white;
-  border: 1px solid $color-white;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {  // &: - ссылка на текущий селектор .btn
-    background-color: $color-secondary;
-  }
-}
 
 // Кнопка в футере (footer__top-btn)
-.footer__top-btn {
-  margin-top: -10px;
-  padding-right: 5px;
+.footer__top_btn {
+    margin-top: -10px;
+    padding-right: 5px;
 }
-
-
 
 
 @media (max-width:1500px) {
@@ -169,7 +175,7 @@ flex-direction: column;
 }
 
 @media (max-width:1200px) {
-    .main__botom{
+    .main__top_box{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,57 +198,47 @@ flex-direction: column;
         flex-direction: column;
         align-items: center;
     }
-    .nav__botom-box{
+    .nav__botom_box{
     position: absolute;
     max-width: 500px;
     width: 100%;
-    bottom: 50px;
-    left: 50px;
+    bottom: 5px;
+    left: 5px;
     
 }
-
+    
 }
 @media (max-width:1000px) {
-  .background{
-    height: 50vh;
-  }
-  
+    .background{
+        height: 50vh;
+    }
+    
 }
 @media (max-width:750px) {
-  .title{
+    .title{
+        font-size: 20px;
+    }
+    .nav__title{
+        font-size: 30px;
+    }
+    .nav__text{
+        font-size: 20px;
+    }
+.nav__botom-btn{
+
     font-size: 20px;
-  }
-  .nav__title{
-    font-size: 30px;
-  }
-  .nav__text{
-    font-size: 20px;
-  }
-  .nav__botom-btn{
-    
-    font-size: 20px;
-    
+
     max-width: 150px;
     width: 100%;
     height: 53px;
-    
-  }
+
+}
 }
 @media (max-width:400px) {
-  .footer__text{
+.footer__text{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-    .nav__botom-box{
-    position: absolute;
-    max-width: 500px;
-    width: 100%;
-    bottom: 25px;
-    left: 25px;
-    
-    }
-    
+}
 }
 

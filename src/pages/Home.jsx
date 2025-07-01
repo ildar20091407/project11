@@ -2,13 +2,24 @@ import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import photo from '../assets/images/photo_2025-02-10_09-43-29.jpg';
+import background from '../assets/images/blobid1579928399432.jpg';
 import s from "./Home.module.scss";
 
-const Home = () => {
+export const Home = () => {
     const { t } = useTranslation();
 
     return (
         <>
+         <nav className="nav__bottom">
+                        <img src={background} className="background" alt="" />
+                        <div className="nav__botom-box">
+                            <div className="main__top-right">
+                                <h2 className="nav__title">{t('Hello!')}</h2>
+                                <h2 className="nav__title">{t('I am')} </h2>
+                                <p className="nav__text">{t('Web-development')}</p>
+                            </div>
+                        </div>
+                    </nav>
             <main className={s.main__top}>
                 <div className={s.main__top_title}>
                     <p className={s.main__top_title}>{t('aboutMe')}</p>
