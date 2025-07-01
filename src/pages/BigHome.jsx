@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Keyboard, Mousewheel, Autoplay, EffectFade } from 'swiper';
+import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,7 +11,7 @@ import Home1 from './Home1';
 import Home2 from './Home2';
 
 // Подключаем необходимые модули Swiper
-SwiperCore([Navigation, Pagination, Keyboard, Mousewheel, Autoplay, EffectFade]);
+SwiperCore
 
 const navbars = [
     <SwiperSlide key="home"><Home /></SwiperSlide>,
